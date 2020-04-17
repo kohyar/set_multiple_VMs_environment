@@ -1,0 +1,17 @@
+In order to enable the NAT mode for a VM with VBoxManage, execute the following command:
+VBoxManage modifyvm ububtu --nic1 nat
+
+
+---------------------------------------
+Enable natnetwork:
+VBoxManage natnetwork add --netname natnet1 --network "192.168.22.0/24" --enable
+
+If you want to configure a VM network adapter in order to use the NAT Network mode with VBoxManage, run the following command:
+
+VBoxManage modifyvm ububtu --nic1 natnetwork
+
+Where:
+ububtu ins the name of VM
+nic1 is the first virtual network adapter (network interface controller);
+natnetwork is the name of the VirtualBox network mode.
+---------------------------------------

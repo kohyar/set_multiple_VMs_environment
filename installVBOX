@@ -1,0 +1,9 @@
+#!/bin/sh
+#sudo VBoxManage extpack uninstall "Oracle VM VirtualBox Extension Pack"
+#sudo apt remove virtualbox virtualbox-6.0
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+sudo apt update
+sudo apt-get install virtualbox-6.0
+sudo apt install virtualbox-ext-pack
+sudo VBoxManage list extpacks
