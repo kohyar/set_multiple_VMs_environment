@@ -14,6 +14,17 @@ The first step is to copy cloned VM into the host. Then you should register the 
 To check if it is registerd:
 <code>$ VBoxManage list vms </code>
 
+After that Create the bridge interface in host os:
+<code>$ brctl addbr vmtestbr1 </code>
+<code>$ ifconfig  vmtestbr1 192.168.222.1  netmask 255.255.255.0 up </code>
+<code>$ ping -c 2 192.168.222.1 </code>
+
+Declare a bridge interface: 
+<code>$ VBoxManage modifyvm guestname --nic1 bridged --nictype1 82545EM --bridgeadapter1 vmtestbr1 </code>
+
+VRDE is for access via rdp client:
+<code>$ VBoxManage modifyvm guestname --vrde on </code>
+
 The next step is cloning some virtual machines. To do this we use:
 <code>$ bash ./CloneVMs </code>
 
