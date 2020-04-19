@@ -8,15 +8,15 @@ To uninstall virtual box:
 <code>$ sudo apt remove virtualbox virtualbox-6.0 </code>
 
 ## Installing virtual machines
-The first step is to copy cloned VM into the host. Then you should register the VM in the VirtualBox:
+The first step is to copy cloned VM into the host. Then you should register the VM in the VirtualBox:<br/>
 <code> $ VBoxManage registervm ~/VirtualBox\ VMs/ububtu/ububtu.vbox </code>
 
-To check if it is registerd:
+To check if it is registerd:<br/>
 <code>$ VBoxManage list vms </code>
 
-After that Create the bridge interface in host os:
-<code>$ brctl addbr vmtestbr1 </code>
-<code>$ ifconfig  vmtestbr1 192.168.222.1  netmask 255.255.255.0 up </code>
+After that Create the bridge interface in host os:<br/>
+<code>$ brctl addbr vmtestbr1 </code><br/>
+<code>$ ifconfig  vmtestbr1 192.168.222.1  netmask 255.255.255.0 up </code><br/>
 <code>$ ping -c 2 192.168.222.1 </code>
 
 Declare a bridge interface: 
