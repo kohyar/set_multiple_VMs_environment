@@ -8,6 +8,12 @@ To uninstall virtual box:
 <code>$ sudo apt remove virtualbox virtualbox-6.0 </code>
 
 ## Installing virtual machines
+The first step is to copy cloned VM into the host. Then you should register the VM in the VirtualBox:
+<code> $ VBoxManage registervm ~/VirtualBox\ VMs/ububtu/ububtu.vbox </code>
+To check if it is registerd:
+<code>$ VBoxManage list vms </code>
+The next step is cloning some virtual machines. To do this we use:
+<code>$ bash ./CloneVMs </code>
 
 ## Headless run of machines
 Using the following command you can run a guest machin:

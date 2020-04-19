@@ -1,0 +1,6 @@
+#!/bin/bash
+VBoxManage startvm vm3 --type headless
+VBoxManage startvm vm4 --type headless
+sleep 1m
+bash ./FindIPScript vm3
+bash ./FindIPScript vm4

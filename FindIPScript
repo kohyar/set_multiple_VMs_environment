@@ -29,6 +29,7 @@ IFS=$'\n'; for line in $(arp -a); do
 
   if [ "$mymac" = "${array[3]}" ]; then
     echo "and the IP address is $ip"
+    echo "-----------------"
   fi
 
 done

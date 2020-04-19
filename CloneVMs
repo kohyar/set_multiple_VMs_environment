@@ -1,0 +1,6 @@
+#!/bin/bash
+vboxmanage clonevm ububtu --name  vm3 --register
+vboxmanage clonevm ububtu --name  vm4 --register
+
+
+
