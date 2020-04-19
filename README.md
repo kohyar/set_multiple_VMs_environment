@@ -19,10 +19,10 @@ After that Create the bridge interface in host os:<br/>
 <code>$ ifconfig  vmtestbr1 192.168.222.1  netmask 255.255.255.0 up </code><br/>
 <code>$ ping -c 2 192.168.222.1 </code>
 
-Declare a bridge interface: 
+Declare a bridge interface:<br/> 
 <code>$ VBoxManage modifyvm guestname --nic1 bridged --nictype1 82545EM --bridgeadapter1 vmtestbr1 </code>
 
-VRDE is for access via rdp client:
+VRDE is for access via rdp client:<br/>
 <code>$ VBoxManage modifyvm guestname --vrde on </code>
 
 The next step is cloning some virtual machines. To do this we use:
