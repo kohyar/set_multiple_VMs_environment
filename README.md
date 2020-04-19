@@ -15,7 +15,7 @@ To check if it is registerd:<br/>
 <code>$ VBoxManage list vms </code>
 
 Configure VM settings:<br/> 
-<code>$ VBoxManage modifyvm vmtest --ostype  "Linux26_64" --memory 4096 --acpi on --cpus 1  --description "VM Test" </code>
+<code>$ VBoxManage modifyvm vmtest --ostype  "Linux26_64" --memory 4096 --acpi on --cpus 1  --description guestname </code>
 
 After that Create the bridge interface in host os:<br/>
 <code>$ brctl addbr vmtestbr1 </code><br/>
