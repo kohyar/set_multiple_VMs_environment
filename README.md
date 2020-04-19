@@ -14,6 +14,9 @@ The first step is to copy cloned VM into the host. Then you should register the 
 To check if it is registerd:<br/>
 <code>$ VBoxManage list vms </code>
 
+Configure VM settings:<br/> 
+<code>$ VBoxManage modifyvm vmtest --ostype  "Linux26_64" --memory 4096 --acpi on --cpus 1  --description "VM Test" </code>
+
 After that Create the bridge interface in host os:<br/>
 <code>$ brctl addbr vmtestbr1 </code><br/>
 <code>$ ifconfig  vmtestbr1 192.168.222.1  netmask 255.255.255.0 up </code><br/>
