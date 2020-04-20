@@ -26,6 +26,8 @@ sudo docker run \
   --detach=true \
   --name=cadvisor \
   gcr.io/google-containers/cadvisor:$VERSION </code>
+  
+cAdvisor is now running (in the background) on http://localhost:8080. The setup includes directories with Docker state cAdvisor needs to observe.
 
 ## Duplicate other virtual machines
 The first step is to copy cloned VM into the host. Then you should register the VM in the VirtualBox:<br/>
