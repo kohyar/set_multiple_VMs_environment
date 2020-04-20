@@ -4,17 +4,30 @@ To set up multiple VMs on GUI-less virtualbox we followed these steps:
 Using the installVBOX script you can install virtualbox 6.0 and virtualbox-ext-pack. It also tests if the ext-pack is installed or not:
 <code>$ bash ./installVBOX </code>
 
-## Install the first VM
-After setting up an ubuntu virtual machine we shoul run the following command to install required packages:
-<code>$ bash ./VMRequirement</code>
-
-The we install cAdvisor. First clone the cAdvisor from it's repository:
-<code>$ git clone https://github.com/google/cadvisor.git </code>
-
-To uninstall virtual box:
+To uninstall virtual box:<br/>
 <code>$ sudo apt remove virtualbox virtualbox-6.0 </code>
 
-## Installing virtual machines
+## Install the first VM
+After setting up an ubuntu virtual machine we shoul run the following command to install required packages:<br/>
+<code>$ bash ./VMRequirement</code>
+
+The we install cAdvisor. First clone the cAdvisor from it's repository:<br/>
+<code>$ git clone https://github.com/google/cadvisor.git </code>
+
+Running cAdvisor in a Docker Container:<br/>
+<code>VERSION=v0.35.0 # use the latest release version from https://github.com/google/cadvisor/releases
+sudo docker run \
+  --volume=/:/rootfs:ro \
+  --volume=/var/run:/var/run:ro \
+  --volume=/sys:/sys:ro \
+  --volume=/var/lib/docker/:/var/lib/docker:ro \
+  --volume=/dev/disk/:/dev/disk:ro \
+  --publish=8080:8080 \
+  --detach=true \
+  --name=cadvisor \
+  gcr.io/google-containers/cadvisor:$VERSION </code>
+
+## Duplicate other virtual machines
 The first step is to copy cloned VM into the host. Then you should register the VM in the VirtualBox:<br/>
 <code> $ VBoxManage registervm ~/VirtualBox\ VMs/ububtu/ububtu.vbox </code>
 
