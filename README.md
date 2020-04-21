@@ -8,7 +8,7 @@ To uninstall virtual box:<br/>
 <code>$ sudo apt remove virtualbox virtualbox-6.0 </code>
 
 ## Install the first VM
-After setting up an ubuntu virtual machine we shoul run the following command to install required packages:<br/>
+After setting up an ubuntu virtual machine we should run the following command to install required packages:<br/>
 <code>$ bash ./VMRequirement</code>
 
 The we install cAdvisor. First clone the cAdvisor from it's repository:<br/>
@@ -29,17 +29,11 @@ sudo docker run \
   
 cAdvisor is now running (in the background) on http://localhost:8080. The setup includes directories with Docker state cAdvisor needs to observe.
 
-## Duplicate other virtual machines
-The first step is to copy cloned VM into the host. Then you should register the VM in the VirtualBox:<br/>
-<code> $ VBoxManage registervm ~/VirtualBox\ VMs/ububtu/ububtu.vbox </code>
+We set up an ubuntu guest on our local machine, then we copy exported machin to the destiation:<br/>
+<code> $ vboxmanage export machineName -o test.ova</code><br/>
+<code> $ vboxmanage import test.ova</code>
 
-To check if it is registerd:<br/>
-<code>$ VBoxManage list vms </code>
-
-Configure VM settings:<br/> 
-<code>$ VBoxManage modifyvm vmtest --ostype  "Linux26_64" --memory 4096 --acpi on --cpus 1  --description guestname </code>
-
-After that Create the bridge interface in host os:<br/>
+We set the bridge network again after importing the ova file. To create the bridge interface in host os:<br/>
 <code>$ brctl addbr vmtestbr1 </code><br/>
 <code>$ ifconfig  vmtestbr1 192.168.222.1  netmask 255.255.255.0 up </code><br/>
 <code>$ ping -c 2 192.168.222.1 </code>
@@ -50,8 +44,19 @@ Declare a bridge interface:<br/>
 VRDE is for access via rdp client:<br/>
 <code>$ VBoxManage modifyvm guestname --vrde on </code>
 
+## Duplicate the VM
 The next step is cloning some virtual machines. To do this we use:
 <code>$ bash ./CloneVMs </code>
+
+## Other option to move a vm
+The first step is to copy cloned VM into the host. Then you should register the VM in the VirtualBox:<br/>
+<code> $ VBoxManage registervm ~/VirtualBox\ VMs/ububtu/ububtu.vbox </code>
+
+To check if it is registerd:<br/>
+<code>$ VBoxManage list vms </code>
+
+Configure VM settings:<br/> 
+<code>$ VBoxManage modifyvm vmtest --ostype  "Linux26_64" --memory 4096 --acpi on --cpus 1  --description guestname </code>
 
 ## Headless run of machines
 Using the following command you can run a guest machin:
