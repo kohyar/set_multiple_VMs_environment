@@ -51,3 +51,4 @@ chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl
 kubectl version --client
 
+https://medium.com/@joseignaciocastelli92/how-to-make-your-first-local-cluster-with-kubernetes-e15fc4b262e7
