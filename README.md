@@ -1,4 +1,7 @@
 # Setting up multiple VMs on GUI-less virtualbox
+Some useful references to know more about microservices:
+ * https://www.nginx.com/blog/deploying-microservices/
+
 To set up multiple VMs on GUI-less virtualbox we followed these steps:
 ## Install Virtualbox 6.0
 Using the installVBOX script you can install virtualbox 6.0 and virtualbox-ext-pack. It also tests if the ext-pack is installed or not:
