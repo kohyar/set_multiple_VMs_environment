@@ -8,7 +8,11 @@ Using the installVBOX script you can install virtualbox 6.0 and virtualbox-ext-p
 <code>$ bash ./installVBOX </code>
 
 To uninstall virtual box:<br/>
-<code>$ sudo apt remove virtualbox virtualbox-6.0 </code>
+<code>$ sudo apt remove virtualbox virtualbox-6.0 </code><br/>
+or:
+<code> $ sudo apt-get remove virtualbox-\*</code><br/>
+<code> $ sudo apt-get purge virtualbox-\*</code><br/>
+
 
 ## Install the first VM
 After setting up an ubuntu virtual machine we should run the following command to install required packages:<br/>
