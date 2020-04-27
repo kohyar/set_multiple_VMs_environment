@@ -24,11 +24,7 @@ After setting up an ubuntu virtual machine we run the <code>VMRequirement</code>
 * Install npm on guest
 * Install our application to Query performance metrics in each node
 
-
-The we install cAdvisor. First clone the cAdvisor from it's repository:<br/>
-<code>$ git clone https://github.com/google/cadvisor.git </code>
-
-Running cAdvisor in a Docker Container:<br/>
+Running cAdvisor in a Docker Container(we cloned the cAdvisor from it's repository in script):<br/>
 <code>VERSION=v0.35.0 # use the latest release version from https://github.com/google/cadvisor/releases
 sudo docker run \
   --volume=/:/rootfs:ro \
@@ -43,6 +39,7 @@ sudo docker run \
   
 cAdvisor is now running (in the background) on http://localhost:8080. The setup includes directories with Docker state cAdvisor needs to observe.
 
+## Move the VM to the server
 We set up an ubuntu guest on our local machine, then we copy exported machin to the destiation:<br/>
 <code> $ vboxmanage export machineName -o test.ova</code><br/>
 <code> $ vboxmanage import test.ova</code>
@@ -58,19 +55,20 @@ Declare a bridge interface:<br/>
 VRDE is for access via rdp client:<br/>
 <code>$ VBoxManage modifyvm guestname --vrde on </code>
 
-## Duplicate the VM
-The next step is cloning some virtual machines. To do this we use:
-<code>$ bash ./CloneVMs </code>
-
-## Other option to move a vm
-The first step is to copy cloned VM into the host. Then you should register the VM in the VirtualBox:<br/>
-<code> $ VBoxManage registervm ~/VirtualBox\ VMs/ububtu/ububtu.vbox </code>
+Other option to move the vm is to copy the cloned VM into the host. Then you should register the VM in the VirtualBox:<br/>
+<code> $ VBoxManage registervm ~/VirtualBox\ VMs/machineName/machineName.vbox </code>
 
 To check if it is registerd:<br/>
 <code>$ VBoxManage list vms </code>
 
 Configure VM settings:<br/> 
 <code>$ VBoxManage modifyvm vmtest --ostype  "Linux26_64" --memory 4096 --acpi on --cpus 1  --description guestname </code>
+
+## Duplicate the VM
+The next step is cloning some virtual machines. To do this we use:
+<code>$ bash ./CloneVMs </code>
+
+## 
 
 ## Headless run of machines
 Using the following command you can run a guest machin:
