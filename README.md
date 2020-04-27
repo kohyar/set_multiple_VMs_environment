@@ -14,11 +14,11 @@ or:<br/>
 
 ## Install the first VM
 After setting up an ubuntu virtual machine we run the <code>VMRequirement</code> script to install required following packages:<br/>
-* Install npm on guest
-* Install Python2 &3 on guest
-* Install Pumba on guest
-* Install Stress on guest
-* Install cAdvisor on guest
+* Install npm on guest(done)
+* Install Python2 &3 on guest(done)
+* Install Pumba on guest 
+* Install Stress and Stress-ng on guest (done)
+* Install cAdvisor on guest (done)
 * Install Docker and Docker compass on guest
 * Install Jaeger on guest
 * Install npm on guest
@@ -38,6 +38,11 @@ sudo docker run \
   gcr.io/google-containers/cadvisor:$VERSION </code>
   
 cAdvisor is now running (in the background) on http://localhost:8080. The setup includes directories with Docker state cAdvisor needs to observe.
+
+To run Jaege agent (we cloned the jaeger from it's repository in script):<br/>
+<code> $ cd jaeger-1.17.1-linux-amd64/ </code>
+<code> $ ./jaeger-all-in-one </code>
+Now it's listeniing on port 16686.
 
 ## Move the VM to the server
 We set up an ubuntu guest on our local machine, then we copy exported machin to the destiation:<br/>
