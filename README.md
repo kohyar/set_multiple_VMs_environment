@@ -83,6 +83,8 @@ List all running available virtual machines:
 ## Find IP of a guest
 To find IP of a guest use the following command:
 <code> $ bash ./FindIPScript guestName</code>
+To start all VMs and find IP of them we use the following command:
+<code> $ bash ./FindAllIPsScript</code>
 
 
 
