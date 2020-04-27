@@ -14,10 +14,21 @@ sudo apt install python3.7
 # Install cAdvisor:
 cd ~/
 git clone https://github.com/google/cadvisor.git
-cd cadvisor
 
-# For Monitoring
+# Install pumba
+sudo curl -L https://github.com/alexei-led/pumba/releases/download/0.5.2/pumba_linux_amd64 -o /usr/bin/pumba
+sudo chmod +x /usr/bin/pumba
+
+# Install stress and stress-ng
 sudo apt-get install stress
+sudo apt update
+sudo apt install snapd
+sudo snap install stress-ng
+
+# Install Jaeger:
+cd ~/
+wget https://github.com/jaegertracing/jaeger/releases/download/v1.17.1/jaeger-1.17.1-linux-amd64.tar.gz
+tar -xf jaeger-1.17.1-linux-amd64.tar.gz
 
 
 
