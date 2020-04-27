@@ -13,8 +13,17 @@ or:<br/>
 <code> $ sudo apt-get remove virtualbox* --purge </code><br/>
 
 ## Install the first VM
-After setting up an ubuntu virtual machine we should run the following command to install required packages:<br/>
-<code>$ bash ./VMRequirement</code>
+After setting up an ubuntu virtual machine we run the <code>VMRequirement</code> script to install required following packages:<br/>
+* Install npm on guest
+* Install Python2 &3 on guest
+* Install Pumba on guest
+* Install Stress on guest
+* Install cAdvisor on guest
+* Install Docker and Docker compass on guest
+* Install Jaeger on guest
+* Install npm on guest
+* Install our application to Query performance metrics in each node
+
 
 The we install cAdvisor. First clone the cAdvisor from it's repository:<br/>
 <code>$ git clone https://github.com/google/cadvisor.git </code>
