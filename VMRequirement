@@ -1,4 +1,20 @@
+sudo apt update
+
+# Install git
 sudo apt install git
+
+# Install python2&3
+sudo apt install python-pip
+sudo apt install python3-pip
+sudo apt install python-minimal
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt install python3.7
+
+# Install cAdvisor:
+cd ~/
+git clone https://github.com/google/cadvisor.git
+cd cadvisor
 
 # For Monitoring
 sudo apt-get install stress
