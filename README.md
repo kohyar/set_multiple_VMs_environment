@@ -14,14 +14,13 @@ or:<br/>
 
 ## Install the first VM
 After setting up an ubuntu virtual machine we run the <code>VMRequirement</code> script to install required following packages:<br/>
-* Install npm on guest(done)
+* Install git on guest(done)
 * Install Python2 &3 on guest(done)
-* Install Pumba on guest 
+* Install Pumba on guest (done)
 * Install Stress and Stress-ng on guest (done)
 * Install cAdvisor on guest (done)
-* Install Docker and Docker compass on guest
-* Install Jaeger on guest
-* Install npm on guest
+* Install Docker and Docker compass on guest (done)(Installation is not in script)
+* Install Jaeger on guest (done)
 * Install our application to Query performance metrics in each node
 
 Running cAdvisor in a Docker Container(we cloned the cAdvisor from it's repository in script):<br/>
@@ -41,8 +40,11 @@ cAdvisor is now running (in the background) on http://localhost:8080. The setup 
 
 To run Jaege agent (we cloned the jaeger from it's repository in script):<br/>
 <code> $ cd jaeger-1.17.1-linux-amd64/ </code>
-<code> $ ./jaeger-all-in-one </code>
+<code> $ ./jaeger-all-in-one </code><br/>
 Now it's listeniing on port 16686.
+
+To know more about the pumba check the following website:
+https://www.gremlin.com/chaos-monkey/chaos-monkey-alternatives/docker/
 
 ## Move the VM to the server
 We set up an ubuntu guest on our local machine, then we copy exported machin to the destiation:<br/>
