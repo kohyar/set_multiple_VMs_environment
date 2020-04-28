@@ -4,6 +4,13 @@ vboxmanage clonevm ububtu --name  vm2 --register
 vboxmanage clonevm ububtu --name  vm3 --register
 vboxmanage clonevm ububtu --name  vm4 --register
 vboxmanage clonevm ububtu --name  vm5 --register
+vboxmanage clonevm ububtu --name  vm6 --register
+vboxmanage clonevm ububtu --name  vm7 --register
+vboxmanage clonevm ububtu --name  vm8 --register
+vboxmanage clonevm ububtu --name  vm9 --register
+vboxmanage clonevm ububtu --name  vm10 --register
+vboxmanage clonevm ububtu --name  vm11 --register
+vboxmanage clonevm ububtu --name  vm12 --register
 
 
 
