@@ -81,6 +81,9 @@ The next step is cloning some virtual machines. To do this we use:
 Using the following command you can run a guest machin:
 <code>$ VBoxManage startvm guestName --type headless </code>
 
+safely shutdown Guest OS in VirtualBox using command line:<br/>
+<code> $ VBoxManage controlvm guestName poweroff</code>
+
 List all available virtual machines:
 <code>$ VBoxManage list vms </code>
 
