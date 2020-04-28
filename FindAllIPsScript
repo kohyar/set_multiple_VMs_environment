@@ -4,9 +4,24 @@ VBoxManage startvm vm2 --type headless
 VBoxManage startvm vm3 --type headless
 VBoxManage startvm vm4 --type headless
 VBoxManage startvm vm5 --type headless
-sleep 1m
+VBoxManage startvm vm6 --type headless
+VBoxManage startvm vm7 --type headless
+VBoxManage startvm vm8 --type headless
+VBoxManage startvm vm9 --type headless
+VBoxManage startvm vm10 --type headless
+VBoxManage startvm vm11 --type headless
+VBoxManage startvm vm12 --type headless
+sleep 4m
 bash ./FindIPScript vm1
 bash ./FindIPScript vm2
 bash ./FindIPScript vm3
 bash ./FindIPScript vm4
 bash ./FindIPScript vm5
+bash ./FindIPScript vm6
+bash ./FindIPScript vm7
+bash ./FindIPScript vm8
+bash ./FindIPScript vm9
+bash ./FindIPScript vm10
+bash ./FindIPScript vm11
+bash ./FindIPScript vm12
+
