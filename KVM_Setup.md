@@ -64,7 +64,7 @@ On the New Host (kvm02)<br/>
 <code>virsh start vm</code><br/>
 
 Then activate the default network:<br/>
-<code>virsh net-start default<code/><br/>
+<code>virsh net-start default</code><br/>
 If an error occured use the following link:<br/>
 https://www.linuxtechi.com/install-configure-kvm-ubuntu-18-04-server/
     
