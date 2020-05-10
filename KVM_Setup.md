@@ -63,7 +63,17 @@ On the New Host (kvm02)<br/>
 <code>Domain vm defined from /tmp/vm.xml</code><br/>
 <code>virsh start vm</code><br/>
 
+Then activate the default network:<br/>
+<code>virsh net-start default<code/><br/>
 If an error occured use the following link:<br/>
 https://www.linuxtechi.com/install-configure-kvm-ubuntu-18-04-server/
+    
+Also you should change the Network Interface and the location of image file in xml file:<br/>
+<code>virsh edit generic</code>
+
+Now you can start the vm.
+
+
+
 
 
