@@ -2,7 +2,7 @@
 * Install KVM and its required packages:<br/>
 <code>sudo apt update </code><br/>
 <code>sudo apt install qemu qemu-kvm libvirt-bin  bridge-utils  virt-manager</code><br/>
-*Start & enable libvirtd service:
+* Start & enable libvirtd service:
 <code>sudo service libvirtd start</code><br/>
 <code>sudo update-rc.d libvirtd enable</code><br/>
 Now verify the status of libvirtd service using below command,
