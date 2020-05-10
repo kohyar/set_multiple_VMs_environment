@@ -63,4 +63,7 @@ On the New Host (kvm02)<br/>
 <code>Domain vm defined from /tmp/vm.xml</code><br/>
 <code>virsh start vm</code><br/>
 
+If an error occured use the following link:<br/>
+https://www.linuxtechi.com/install-configure-kvm-ubuntu-18-04-server/
+
 
