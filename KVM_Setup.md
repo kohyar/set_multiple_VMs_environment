@@ -12,10 +12,10 @@ To check the version of KVM:
 
 
 ## KVM commands
-Find ip of geusts:Steps to find the ip address of Linux KVM guest virtual machine
-    1. Open the terminal app or login using ssh to host server
-    2. Get the network list: virsh net-list
-    3. Type the command: virsh net-dhcp-leases networkNameHere
+Find ip of geusts:Steps to find the ip address of Linux KVM guest virtual machine<br/>
+    1. Open the terminal app or login using ssh to host server<br/>
+    2. Get the network list: <code>virsh net-list</code><br/>
+    3. Type the command: <code>virsh net-dhcp-leases networkNameHere</code><br/>
 
 usually:
 Type the following command to list network:
