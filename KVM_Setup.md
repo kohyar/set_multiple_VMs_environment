@@ -17,36 +17,34 @@ Find ip of geusts:Steps to find the ip address of Linux KVM guest virtual machin
     2. Get the network list: <code>virsh net-list</code><br/>
     3. Type the command: <code>virsh net-dhcp-leases networkNameHere</code><br/>
 
-usually:
-Type the following command to list network:
-# virsh net-list
-# virsh net-info default
-# virsh net-dhcp-leases default
+Type the following command to list network:<br/>
+<code>virsh net-list</code><br/>
+<code>virsh net-info default</code><br/>
+<code>virsh net-dhcp-leases default</code><br/>
 
-list of Vms:
-virsh list –all
+list of Vms:<br/>
+<code>virsh list –all</code><br/>
 
 List Running VMS
-Type the following command:
-# virsh list
+<code>virsh list</code><br/>
 
 
-start VM:
-virsh start name
+start VM:<br/>
+<code>virsh start name</code><br/>
 
 
-Turn of:
-virsh shutdown
+Turn of:<br/>
+<code>virsh shutdown</code><br/>
 
-Forcefully Stop A Guest
-# virsh list
-# virsh destroy domainName
+Forcefully Stop A Guest<br/>
+<code>virsh list</code><br/>
+<code>virsh destroy domainName</code><br/>
 
-suspend:
-virsh suspend guest1
+suspend:<br/>
+<code>virsh suspend guest1</code><br/>
 
-reset:
-virsh reset guest1
+reset:<br/>
+<code>virsh reset guest1</code><br/>
 
 
 How to clone existing KVM virtual machine images on Linux:
