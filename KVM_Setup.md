@@ -69,11 +69,5 @@ If an error occured use the following link:<br/>
 https://www.linuxtechi.com/install-configure-kvm-ubuntu-18-04-server/
     
 Also you should change the Network Interface and the location of image file in xml file:<br/>
-<code>virsh edit generic</code>
-
+<code>virsh edit generic</code><br/>
 Now you can start the vm.
-
-
-
-
-
