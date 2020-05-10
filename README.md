@@ -97,6 +97,9 @@ To start all VMs and find IP of them we use the following command:
 <code> $ bash ./FindAllIPsScript</code>
 
 
+## Set up VM using kvm
+To set up a VM using kvm read KVM_Setup.md
+
 
 
 
