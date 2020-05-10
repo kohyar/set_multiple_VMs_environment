@@ -51,4 +51,16 @@ reset:<br/>
 or:<br/>
 <code>virt-clone --original {Domain-Vm-Name-Here} --name {New-Domain-Vm-Name-Here} --file {/var/lib/libvirt/images/File.Name.here}</code><br/>
 
+## Move Guest to Another Host
+On the Old Host (kvm01)<br/>
+<code>virsh shutdown vm</code><br/>
+<code>virsh dumpxml vm > /tmp/vm.xml</code><br/>
+<code>scp /tmp/vm.xml kvm02:/tmp/vm.xml</code><br/>
+<code>scp /var/lib/libvirt/images/vm.qcow2 kvm02:/var/lib/libvirt/images/vm.qcow2</code><br/>
+
+On the New Host (kvm02)<br/>
+<code>virsh define /tmp/vm.xml</code><br/>
+<code>Domain vm defined from /tmp/vm.xml</code><br/>
+<code>virsh start vm</code><br/>
+
 
