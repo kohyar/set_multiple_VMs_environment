@@ -46,6 +46,9 @@ suspend:<br/>
 reset:<br/>
 <code>virsh reset guest1</code><br/>
 
+To delete a VM Guest with virsh run:<br/>
+<code>virsh undefine VM_NAME</code><br/>
+
 ## How to clone existing KVM virtual machine images on Linux:
 <code>virt-clone --original {Domain-Vm-Name-Here} --name {New-Domain-Vm-Name-Here} –auto-clone</code><br/>
 or:<br/>
