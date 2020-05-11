@@ -12,7 +12,7 @@ To uninstall virtual box:<br/>
 or:<br/>
 <code> $ sudo apt-get remove virtualbox* --purge </code><br/>
 
-## Install the first VM
+## Install the required tools
 After setting up an ubuntu virtual machine we run the <code>VMRequirement</code> script to install required following packages:<br/>
 * Install git on guest(done)
 * Install Python2 &3 on guest(done)
