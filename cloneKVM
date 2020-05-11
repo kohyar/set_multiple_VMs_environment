@@ -1,0 +1,41 @@
+sudo virt-clone --original vm1 --name vm3 --file vm3
+virsh start vm3
+
+sudo virt-clone --original vm1 --name vm4 --file vm4
+virsh start vm4
+
+sudo virt-clone --original vm1 --name vm5 --file vm5
+virsh start vm5
+
+sudo virt-clone --original vm1 --name vm6 --file vm6
+virsh start vm6
+
+sudo virt-clone --original vm1 --name vm7 --file vm7
+virsh start vm7
+
+sudo virt-clone --original vm1 --name vm8 --file vm8
+virsh start vm8
+
+sudo virt-clone --original vm1 --name vm9 --file vm9
+virsh start vm9
+
+sudo virt-clone --original vm1 --name vm10 --file vm10
+virsh start vm10
+
+sudo virt-clone --original vm1 --name vm11 --file vm11
+virsh start vm11
+
+sudo virt-clone --original vm1 --name vm12 --file vm12
+virsh start vm12
+
+sudo virt-clone --original vm1 --name vm13 --file vm13
+virsh start vm13
+
+sudo virt-clone --original vm1 --name vm14 --file vm14
+virsh start vm14
+
+sudo virt-clone --original vm1 --name vm15 --file vm15
+virsh start vm15
+
+sudo virt-clone --original vm1 --name vm16 --file vm16
+virsh start vm16
