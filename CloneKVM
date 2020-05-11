@@ -40,6 +40,8 @@ virsh start vm15
 sudo virt-clone --original vm1 --name vm16 --file vm16
 virsh start vm16
 
+sudo virt-clone --original vm1 --name vm-save --file vm-save
+
 # Change the name of guests(we want to run command for each system as a sigle ssh command)
 # sudo apt install sshpass
 # for example: sshpass -p '13971397' ssh test@192.168.122.184 'ls'
