@@ -74,3 +74,10 @@ https://www.linuxtechi.com/install-configure-kvm-ubuntu-18-04-server/
 Also you should change the Network Interface and the location of image file in xml file:<br/>
 <code>virsh edit generic</code><br/>
 Now you can start the vm.
+
+
+## Kubernetes
+install Minikube and kubectl using following link:<br/>
+https://linuxhint.com/install-minikube-ubuntu/ <br/>
+Follow the example in :<br/>
+https://kubernetes.io/blog/2019/07/23/get-started-with-kubernetes-using-python/
