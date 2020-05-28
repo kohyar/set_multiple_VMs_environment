@@ -82,3 +82,9 @@ install Minikube and kubectl using following link:<br/>
 https://linuxhint.com/install-minikube-ubuntu/ <br/>
 Follow the example in :<br/>
 https://kubernetes.io/blog/2019/07/23/get-started-with-kubernetes-using-python/
+Starting Minikube on KVM
+With all components installed, you should be ready to start minikube with KVM driver.
+
+Set KVM as default driver:
+<code>$  minikube config set vm-driver kvm2 </code><br/>
+More info: https://computingforgeeks.com/how-to-run-minikube-on-kvm/ <br/>
