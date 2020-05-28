@@ -77,6 +77,7 @@ Now you can start the vm.
 
 
 ## Kubernetes
+On server:
 install Minikube and kubectl using following link:<br/>
 https://linuxhint.com/install-minikube-ubuntu/ <br/>
 Follow the example in :<br/>
