@@ -76,7 +76,7 @@ Also you should change the Network Interface and the location of image file in x
 Now you can start the vm.
 
 
-## Kubernetes
+## Install minikube and kubectl 
 On server:
 install Minikube and kubectl using following link:<br/>
 https://computingforgeeks.com/how-to-run-minikube-on-kvm/ <br/>
@@ -85,6 +85,7 @@ You may need to set KVM as default driver:
 More info:<br/>
 https://linuxhint.com/install-minikube-ubuntu/ <br/>
 
+# Test Application
 Then we can test the following example:<br/>
 https://kubernetes.io/blog/2019/07/23/get-started-with-kubernetes-using-python/ <br/>
 
