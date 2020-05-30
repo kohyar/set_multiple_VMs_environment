@@ -9,15 +9,18 @@ Create 3 hosts and call them kube-01, kube-02 and kube-03. <br/>
 * kube-01:	Master
 * kube-02:	worker
 * kube-03:	worker
-### Step 2 - Set up each server in the cluster to run Kubernetes.
+### Step 2 - Set up each server in the cluster to run docker and Kubernetes.
 On each of the three Ubuntu servers install docker and kubernetees.<br/>
 To install docker on ubuntu (It's important to install like this): https://kubernetes.io/docs/setup/production-environment/container-runtimes/ <br>
 To Install Kubernetes on Ubuntu: https://phoenixnap.com/kb/install-kubernetes-on-ubuntu <br/>
+
+### Step 3: Make your cluster and add nodes
+o set up a cluster and add nodes to the cluster, follow the steps after Step 6 in https://phoenixnap.com/kb/install-kubernetes-on-ubuntu <br/>
 You may need to turn off swap: <code>swapoff -a</code><br/>
-To set up a cluster and add nodes to the cluster: https://phoenixnap.com/kb/install-kubernetes-on-ubuntu
-
-
+Sample of command to join a worker to the server:<br/>
 from vm4:
 sudo kubeadm join 192.168.122.39:6443 --token 0vffon.2vdq471r7a7idzhp --discovery-token-ca-cert-hash sha256:677e38813c3cd96c8b60a9fcd1b4488a4bd9b9410e2839d513a6754b0133f3cb
+
+### Step 4 - Deploying The Weaveworks Microservices Sock Shop
 
 
