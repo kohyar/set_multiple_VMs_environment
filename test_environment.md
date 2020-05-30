@@ -18,7 +18,6 @@ To set up a cluster and add nodes to the cluster: https://phoenixnap.com/kb/inst
 
 
 from vm4:
-kubeadm join 192.168.122.39:6443 --token 0vffon.2vdq471r7a7idzhp \
-    --discovery-token-ca-cert-hash sha256:677e38813c3cd96c8b60a9fcd1b4488a4bd9b9410e2839d513a6754b0133f3cb
+sudo kubeadm join 192.168.122.39:6443 --token 0vffon.2vdq471r7a7idzhp --discovery-token-ca-cert-hash sha256:677e38813c3cd96c8b60a9fcd1b4488a4bd9b9410e2839d513a6754b0133f3cb
 
 
