@@ -39,6 +39,10 @@ Now it's listeniing on port 16686.
 To know more about the pumba check the following website:
 https://www.gremlin.com/chaos-monkey/chaos-monkey-alternatives/docker/
 
+## Create a Kubernetes Cluster on Ubuntu
+The purpose of this part is to enable you to run a demo microservices application on a kubernetes cluster you have created. We used the tutorial from this url:<br/>
+https://www.gremlin.com/community/tutorials/how-to-create-a-kubernetes-cluster-on-ubuntu-16-04-with-kubeadm-and-weave-net/ <br/>
+test_environment.md indicates the steps to run the test environment.<br/>
 
 
 
