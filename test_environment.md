@@ -17,3 +17,6 @@ To Install Kubernetes on Ubuntu: https://phoenixnap.com/kb/install-kubernetes-on
 ### Step 3 - Setup the Kubernetes Master
 
 
+sudo kubeadm join 192.168.122.184:6443 --token 6vnyre.u3dxx9ryrlbdyhy9     --discovery-token-ca-cert-hash sha256:a46ad1069d5e94face27f715270d20be891774654c0aebabf2c8571afa486450
+
+
