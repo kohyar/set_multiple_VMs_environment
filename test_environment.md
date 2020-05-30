@@ -14,5 +14,6 @@ On each of the three Ubuntu servers install docker and kubernetees.<br/>
 To install docker on ubuntu: https://kubernetes.io/docs/setup/production-environment/container-runtimes/ <br>
 You may need to turn off swap: <code>swapoff -a</code><br/>
 To Install Kubernetes on Ubuntu: https://phoenixnap.com/kb/install-kubernetes-on-ubuntu <br/>
+### Step 3 - Setup the Kubernetes Master
 
 
