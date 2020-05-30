@@ -6,6 +6,13 @@ Before you begin this tutorial, you’ll need the following:<br/>
 * 3 Ubuntu servers with 4GM RAM and private networking enabled<br/>
 ### Step 1 - Get each server ready to run Kubernetes
 Create 3 hosts and call them kube-01, kube-02 and kube-03. <br/>
-* kube-01	Master
-* kube-02	Node
-* kube-03	Node
+* kube-01:	Master
+* kube-02:	Node
+* kube-03:	Node
+### Step 2 - Set up each server in the cluster to run Kubernetes.
+On each of the three Ubuntu servers install docker and kubernetees.<br/>
+To install docker on ubuntu: https://kubernetes.io/docs/setup/production-environment/container-runtimes/ <br>
+You may need to turn off swap: <code>swapoff -a</code><br/>
+To Install Kubernetes on Ubuntu: https://phoenixnap.com/kb/install-kubernetes-on-ubuntu <br/>
+
+
