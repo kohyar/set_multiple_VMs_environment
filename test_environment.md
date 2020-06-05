@@ -21,7 +21,11 @@ Sample of command to join a worker to the server:<br/>
 from vm4:<br/>
 <code> sudo kubeadm join 192.168.122.39:6443 --token 0vffon.2vdq471r7a7idzhp --discovery-token-ca-cert-hash sha256:677e38813c3cd96c8b60a9fcd1b4488a4bd9b9410e2839d513a6754b0133f3cb </code>
 
-### Step 4 - Deploying The Weaveworks Microservices Sock Shop
-Next we will deploy a demo microservices application to your kubernetes cluster by following the step in :<br/>
+### Step 4 - Installing the Weave Net Add-On
+Use the following link:
+https://www.weave.works/docs/net/latest/kubernetes/kube-addon/
+
+### Step 5 - Deploying The Weaveworks Microservices Sock Shop
+Next we will deploy a demo microservices application to your kubernetes cluster by following the step 6 in :<br/>
 https://www.gremlin.com/community/tutorials/how-to-create-a-kubernetes-cluster-on-ubuntu-16-04-with-kubeadm-and-weave-net/
 
