@@ -3,7 +3,7 @@
 ### Requirements
 locust <code>sudo pip install locustio</code> or <code>sudo pip install locust</code> <br/>
 ### Run
-<code>./runLocust.sh -h [host] -c [number of clients] -r [number of requests]</code><br/>
+<code>./runLocust.sh -h 192.168.122.184:30001 -c [number of clients] -r [number of requests]</code><br/>
 
 Parameters:
 [host] - The hostname (and port if applicable) where the application is exposed. (Required)<br/>
