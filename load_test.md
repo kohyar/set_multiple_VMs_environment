@@ -1,7 +1,11 @@
 ## Load test
 <code>git clone https://github.com/microservices-demo/load-test.git</code><br/>
-### Requirements
-locust <code>sudo pip install locustio</code> or <code>sudo pip install locust</code> <br/>
+### Install
+<code>
+  sudo apt-get install python-pip ##for python2
+  sudo apt-get install python3-pip ##for python3
+  sudo python3 -m pip install locust ## or <code>sudo pip install locustio
+  </code> <br/>
 ### Run
 <code>./runLocust.sh -h 192.168.122.184:30001 -c [number of clients] -r [number of requests]</code><br/>
 
