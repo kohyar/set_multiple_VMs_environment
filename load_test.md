@@ -1,7 +1,6 @@
 ## Load test
 <code>git clone https://github.com/microservices-demo/load-test.git</code><br/>
 ### Install
-<code>
 <code>sudo apt-get install python-pip ##for python2</code> <br/>
 <code>sudo apt-get install python3-pip ##for python3</code> <br/>
 <code>sudo python3 -m pip install locust ## or <code>sudo pip install locustio</code> <br/>
