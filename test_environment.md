@@ -28,5 +28,5 @@ Next we will deploy a demo microservices application to your kubernetes cluster 
 https://www.gremlin.com/community/tutorials/how-to-create-a-kubernetes-cluster-on-ubuntu-16-04-with-kubeadm-and-weave-net/
 
 To delete everything from a certain namespace you use the -n flag:<br/>
-<code>kubectl delete all --all -n {namespace}</code>
+<code>kubectl delete all --all -n sock-shop</code>
 
