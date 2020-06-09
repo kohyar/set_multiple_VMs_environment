@@ -6,6 +6,7 @@ From microservices-demo/deploy/kubernetes run Jaeger using the following command
 To use the Jaeger UI find the url:<br/>
 <code>kubectl get pods --all-namespaces --output=wide|grep jaeger</code><br/>
 It's running on port 16686. For example:<br/>
-http://10.32.0.6:16686/
+http://10.32.0.6:16686/ <br/>
+More info: https://github.com/microservices-demo/microservices-demo/issues/769
 
 
