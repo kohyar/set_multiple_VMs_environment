@@ -32,3 +32,12 @@ To delete everything from a certain namespace you use the -n flag:<br/>
 To force delete:
 <code>kubectl delete all --all --grace-period=0 --force -n sock-shop</code><br/>
 
+### Troubleshooting the environment
+Check the status of the nodes:<br/>
+<code>kubectl get nodes</code><br/>
+If they stays in NotReady staus, restart the nodes and make swap off:<br/>
+<code>sudo swapoff -a</code><br/>
+Check the status again. If it's still in NotReady status you can delet the node and add it again:<br/>
+<code>kubectl delete node node-name</code><br/>
+
+
