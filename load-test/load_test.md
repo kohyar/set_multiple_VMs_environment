@@ -6,7 +6,7 @@
 <code>sudo python3 -m pip install locust ## or <code>sudo pip install locustio</code> <br/>
   
 ### Run
-<code>./runLocust.sh -h 192.168.122.184:30001 -c [number of clients] -r [number of requests]</code><br/>
+<code>locust --host=http://192.168.122.208:30001 -f locustfile.py -u=1 --hatch-rate=5</code><br/>
 
 Parameters:
 [host] - The hostname (and port if applicable) where the application is exposed. (Required)<br/>
