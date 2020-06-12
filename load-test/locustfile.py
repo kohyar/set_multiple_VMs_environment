@@ -1,9 +1,11 @@
 import base64
 
-from locust import HttpUser,HttpLocust, TaskSet, task
-from random import randint, choice
+from locust import HttpUser, TaskSet, task, between
+#from random import randint, choice
+import random
 
 
+"""
 class WebTasks(TaskSet):
 
     @task
@@ -28,3 +30,13 @@ class Web(HttpUser):
     task_set = WebTasks
     min_wait = 0
     max_wait = 0
+"""
+
+class QuickstartUser(HttpUser):
+    wait_time = between(5, 9)
+
+    @task
+    def index_page(self):
+        self.client.get("/catalogue")
+        self.client.get("/")
+
